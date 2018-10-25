@@ -123,16 +123,35 @@
         }
       }
 
-      .last-saved-text {
+      .right-section {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
         flex: 1;
-        font-size: .8rem;
-        opacity: .5;
-        text-align: right;
+        height: 100%;
+        justify-content: flex-end;
 
-        @media only screen and (max-width: 610px) {
-          display: none;
+
+        .last-saved-text {
+          font-size: .8rem;
+          margin-right: 12px;
+          opacity: .5;
+
+          @media only screen and (max-width: 610px) {
+            display: none;
+          }
+        }
+
+        .settings-icon {
+          font-size: 1.2rem;
+          opacity: .2;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
+
     }
 
   }

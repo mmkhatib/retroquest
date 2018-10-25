@@ -17,7 +17,7 @@
 
 import {TextFieldComponent} from './text-field.component';
 
-describe('TextFieldComponent', () => {
+describe('SettingsDialogComponent', () => {
   let component: TextFieldComponent;
 
   beforeEach(() => {

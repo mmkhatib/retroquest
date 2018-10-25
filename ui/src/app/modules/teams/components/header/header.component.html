@@ -45,8 +45,13 @@
 
       <div class="right-section">
         <div class="last-saved-text">{{lastSavedText}}</div>
-        <div class="fas fa-cog settings-icon"></div>
+        <div
+          class="fas fa-cog settings-icon"
+          (click)="openSettingsDialog()"
+        ></div>
       </div>
+
+
     </div>
   </div>
 
@@ -158,3 +163,7 @@
   [theme]="theme"
   (submitted)="onEndRetroDialogSubmitted()"
 ></rq-end-retro-dialog>
+
+<rq-settings-dialog>
+
+</rq-settings-dialog>

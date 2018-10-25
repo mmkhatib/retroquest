@@ -35,6 +35,8 @@ import {EndRetroDialogComponent} from './end-retro-dialog/end-retro-dialog.compo
 import {FeedbackDialogComponent} from './feedback-dialog/feedback-dialog.component';
 import {ActionsRadiatorViewComponent} from './actions-radiator-view/actions-radiator-view.component';
 import {DeletionOverlayComponent} from './deletion-overlay/deletion-overlay.component';
+import {SettingsDialogComponent} from "./settings-dialog/settings-dialog.component";
+import {DialogComponent} from "./dialog/dialog.component";
 
 @NgModule({
   imports: [
@@ -60,7 +62,9 @@ import {DeletionOverlayComponent} from './deletion-overlay/deletion-overlay.comp
     EndRetroDialogComponent,
     FeedbackDialogComponent,
     ActionsRadiatorViewComponent,
-    DeletionOverlayComponent
+    DeletionOverlayComponent,
+    SettingsDialogComponent,
+    DialogComponent
   ],
 
   exports: [
@@ -79,7 +83,8 @@ import {DeletionOverlayComponent} from './deletion-overlay/deletion-overlay.comp
     EndRetroDialogComponent,
     FeedbackDialogComponent,
     ActionsRadiatorViewComponent,
-    DeletionOverlayComponent
+    DeletionOverlayComponent,
+    SettingsDialogComponent
   ]
 
 })

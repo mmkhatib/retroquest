@@ -22,6 +22,7 @@ import {Feedback} from '../../../domain/feedback';
 import {FeedbackDialogComponent} from '../../../controls/feedback-dialog/feedback-dialog.component';
 import {SaveCheckerService} from '../../services/save-checker.service';
 import {parseTheme, Themes, themeToString} from '../../../domain/Theme';
+import {SettingsDialogComponent} from "../../../controls/settings-dialog/settings-dialog.component";
 
 @Component({
   selector: 'rq-header',
@@ -42,6 +43,7 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild(FeedbackDialogComponent) feedbackDialog: FeedbackDialogComponent;
   @ViewChild(EndRetroDialogComponent) endRetroDialog: EndRetroDialogComponent;
+  @ViewChild(SettingsDialogComponent) settingsDialog: SettingsDialogComponent;
 
   actionsRadiatorViewEnabled = false;
 
@@ -116,5 +118,9 @@ export class HeaderComponent implements OnInit {
       this.theme = parseTheme(savedTheme);
       this.themeChanged.emit(this.theme);
     }
+  }
+
+  public openSettingsDialog(): void {
+    this.settingsDialog.open();
   }
 }
